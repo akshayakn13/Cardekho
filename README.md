@@ -14,7 +14,7 @@ The datasets consist of several independent variables include:
     Owner
 
 We are going to use some of the variables which we need for regression models.
-You can dowload the dataset from-https://www.kaggle.com/nehalbirla/vehicle-dataset-from-cardekho
+You can download the dataset from-https://www.kaggle.com/nehalbirla/vehicle-dataset-from-cardekho
 
 
 # Problem Statement
