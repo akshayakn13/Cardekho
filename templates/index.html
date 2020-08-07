@@ -8,11 +8,10 @@
 </head>
 
 <body>
-
-    <div style="color:blue">
+    <div style="color:hsla(hue, saturation, lightness, alpha)">
         <form action="{{ url_for('predict')}}" method="post">
-            <h2>Predictive analysis</h2>
-            <h3>Year</h3>
+            <h2>Predicting Car Prices</h2>
+            <h3>Year Purchased</h3>
             <input id="first" name="Year" type="number ">
             <h3>What is the Showroom Price?(In lakhs)</h3><br><input id="second" name="Present_Price" required="required">
             <h3>How Many Kilometers Drived?</h3><input id="third" name="Kms_Driven" required="required">
@@ -20,7 +19,7 @@
             <h3>What Is the Fuel type?</h3><br><select name="Fuel_Type_Petrol" id="fuel" required="required">
                 <option value="Petrol">Petrol</option>
                 <option value="Diesel">Diesel</option>
-                <option value="CNG">CNG</option>
+                <option value="Diesel">CNG</option>
             </select>
             <h3>Are you A Dealer or Individual</h3><br><select name="Seller_Type_Individual" id="resea" required="required">
                 <option value="Dealer">Dealer</option>
@@ -48,6 +47,9 @@
 
     <style>
         body {
+            padding: 0px;
+            background-image: url("bg3.jpg");
+            background-size: cover;
             background-color: lightslategray;
             text-align: center;
             padding: 0px;
@@ -115,11 +117,11 @@
         }
         
         #sub {
-            width: 120px;
-            height: 43px;
+            width: 215px;
+            height: 52px;
             text-align: center;
-            border-radius: 14px;
-            font-size: 18px;
+            border-radius: 18px;
+            font-size: 17px;
         }
         
         #sub:hover {
